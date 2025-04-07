@@ -60,6 +60,11 @@ img {
         flex-direction: column; /* Passer en mode colonne */
     }
 
+    .portrait{
+        margin: auto;
+        margin-left: auto;
+    }
+
     .header {
         gap: 10px; /* Réduire l'écart entre les éléments du header */
         flex-direction: column; /* Passer en mode colonne */
