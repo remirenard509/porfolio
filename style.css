@@ -54,7 +54,7 @@ img {
 }
 
 /* Media query pour les écrans de moins de 480px (smartphones en portrait) */
-@media (max-width: 480px) {
+@media (max-width: 720px) {
     body {
         font-size: 14px; /* Réduire la taille du texte */
         flex-direction: column; /* Passer en mode colonne */
