@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rémi RENARD</title>
     <link rel="stylesheet" href="style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
 </head>
 <body>
      <div class="header">
-        <div><h1>Rémi RENARD</h1><br>
+        <div class="description"><h1>Rémi RENARD</h1><br>
         <h2>A propos de moi</h2>
-        <p class="text-justify">Enseignant de mathématiques en reconversion dans le développement full stack à l’école Coda à Orléans.<br><br>
+        <p>Enseignant en reconversion dans le développement informatique à l’école Coda. <br>
+            Je suis particulièrement intéressé par l’IA, et la data.<br><br>
 
             Mes compétences:<br>
             C, python, PHP, java script, java<br>
@@ -22,42 +25,258 @@
             word press, figma, vs code, eclipse, postman<br>
             Programmation orienté objet (POO), Solid<br>
         </p>
-        <a target="_blank" rel="noopener" class="button" href="https://gitlab.com/rem.renard36">gitlab</a>
-        <a target="_blank" rel="noopener" class="button" href="assets/CV.pdf"> Mon CV</a>
+        <a target="_blank" rel="noopener"  class="btn btn-primary btn-lg" href="https://github.com/remirenard509">github</a>
+        <a target="_blank" rel="noopener"  class="btn btn-primary btn-lg" href="https://gitlab.com/rem.renard36">gitlab</a>
+        <a target="_blank" rel="noopener"  class="btn btn-primary btn-lg" href="assets/CV.pdf"> Mon CV</a>
         </div>
-        <img class="portrait" src="assets/remi.png" width="100px" />
+        <img class="portrait" src="assets/remi.png" />
         
     </div>
     <h2 class="text-center"> Mes projets</h2>
-    <div class="container">
-        <div class="projet">
-            <p>Il s’agit d’une application de rencontre où l'on match en trouvant la description du dessin. On peut ensuite envoyer des messages ou des dessins à la personne. Il y a un système de superMatch pour les utilisateurs premium via paypal.</p>
-            <img src="assets/drawdate.png" alt="drawdate" width="100px" />
-        </div>
-        <div class="projet">
-            <img src="assets/handwritting.png" alt="handwritting" width="100px" />
-            <p>Il s’agit d’une application pour l’entreprise DWS qui permet de dessiner à la main sur une tablette et qui convertit le dessin en svg pour être ensuite gravé sur des produits de luxe à l’aide d’un laser.</p>
-        </div>
-        <div class="projet">
-            
-            <p>Jeu en java style pokémon en le programmant, j’ai appris la POO, l’encapsulation, l’héritage, le polymorphisme, les constructeurs, la modularité.</p>
-            <img src="assets/pokemon.png" alt="pokemon" width="100px" />
-        </div>
-        <div class="projet">
-            <img src="assets/php.png" alt="gestionnaire de magasin" width="100px" />
-            <p>Il s’agit d’un gestionnaire de magasin en php qui gère les produits, commande, utilisateurs dans une base de données selon la méthode CRUD (create, read, update, delete), l’utilisateur peut se connecter avec un token généré par l’application.</p>
-        </div>
-        <div class="projet">
-            <p>Lors d’une game jam, j’ai créé un jeu à l’aide de phaser JS, il s’agit d’un jeu, style space invader qui avec un chat magicien qui lance des sorts sur des fantômes.
-                Lien vers le jeu : <a target="_blank" rel="noopener" href="https://dylserker.itch.io/glitch-hunters" style="color: white">https://dylserker.itch.io/glitch-hunters</a></p>
-            <img src="assets/nekomancy.png" alt="nekomancy" width="100px" />
-            </div>
-        <div class="projet">
-            <img src="assets/pathfinding.png" alt="pathfinding" width="100px" />
-            <p>Il s’agit d’un algorithme en C qui trouve le plus court chemin entre un noeud de départ et un noeud d’arrivé en prennant compte les liens entre chaque noeud.
-                grâce à ce projet je maitrise les graphe, les pointeurs, la mémoire dynamique, le débogage, la gestion des cas limites, des exceptions et des erreurs.</p>
-        </div>
-    </div>
+<section style="font-family: Arial, sans-serif; padding: 20px;">
+  <h2>Nom de l’application : Draw Date</h2>
+
+  <h3>Concept</h3>
+  <p>
+    <strong>Draw Date</strong> est une application de rencontre innovante qui mise sur la créativité et l’intuition plutôt que sur les simples apparences.  
+    Le principe est simple mais original : pour matcher avec quelqu’un, il faut réussir à deviner la description de son dessin.  
+    Ce mécanisme ludique et artistique encourage des interactions plus profondes et plus authentiques.
+  </p>
+
+  <h3>Fonctionnalités principales</h3>
+  <ul>
+    <li>
+      <strong>Matching par dessin :</strong><br>
+      Chaque utilisateur crée un dessin représentant une émotion, une idée ou une scène. Les autres doivent deviner correctement sa description parmi plusieurs propositions.
+    </li>
+    <li>
+      <strong>Messagerie interactive :</strong><br>
+      Une fois le match établi, les utilisateurs peuvent discuter par messages textes ou échanger des dessins en direct via un système de dessin partagé (HTML canvas).
+    </li>
+    <li>
+      <strong>SuperMatch (Premium) :</strong><br>
+      Grâce à un abonnement premium via PayPal, les utilisateurs débloquent des fonctionnalités exclusives :
+      <ul>
+        <li>Forcer un match avec un utilisateur (limité dans le temps ou en nombre)</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>Public cible</h3>
+  <p>
+    Étudiants, jeunes adultes, artistes ou simplement curieux de vivre une expérience de rencontre différente, plus créative et moins superficielle.
+  </p>
+
+  <h3>Objectif</h3>
+  <p>
+    Favoriser les connexions sincères et originales en transformant la rencontre en un jeu d’imagination et d’expression personnelle.
+  </p>
+  
+  <h3 style="color: #333;">Captures et démo</h3>
+  <p>
+    <img src="assets/drawdate.png" alt="drawdate" width="100px" />
+  </p>
+
+</section>
+<section style="font-family: Arial, sans-serif; padding: 20px;">
+
+
+  <h2>Application de dessin personnalisée pour gravure de luxe – DWS</h2>
+
+  <h3>Contexte</h3>
+  <p>
+    L’entreprise <strong>DWS</strong>, spécialisée dans la personnalisation de produits de luxe, a développé une application innovante permettant aux clients de créer des designs uniques à la main directement depuis une tablette. Cette application transforme l’expérience client en un moment artistique et exclusif, en liant le geste manuel à la précision technologique.
+  </p>
+
+  <h3>Fonctionnalité principale</h3>
+  <p>
+    Les utilisateurs peuvent dessiner librement à la main grâce à une interface tactile fluide et intuitive. Une fois le dessin terminé, il est automatiquement converti en <strong>fichier SVG vectoriel</strong>, parfaitement compatible avec les systèmes de gravure laser haute précision utilisés par DWS.
+  </p>
+
+  <h3>Objectif</h3>
+  <p>
+    Offrir aux clients une <strong>expérience de personnalisation haut de gamme</strong>, en leur permettant de graver leurs propres dessins, signatures ou motifs directement sur des objets de luxe : stylos, montres, bijoux, maroquinerie, accessoires, etc.
+  </p>
+
+  <h3>Fonctionnalités clés</h3>
+  <ul>
+    <li>Interface de dessin tactile optimisée</li>
+    <li>Conversion automatique en SVG :
+      <br>Le moteur graphique convertit les courbes de Bézier et les traits libres en un fichier SVG optimisé pour la gravure vectorielle.
+    </li>
+    <li>Prévisualisation en temps réel :
+      <br>Le client peut voir un rendu simulé du produit final avant la validation, avec un aperçu de la gravure sur le support sélectionné.
+    </li>
+    <li>Sauvegarde et envoi automatique :
+      <br>À la fin du dessin, le fichier SVG est automatiquement enregistré et envoyé à la machine de gravure.
+    </li>
+  </ul>
+
+  
+  <h3 style="color: #333;">Captures et démo</h3>
+  <p>
+      <img src="assets/handwritting.png" alt="handwritting" width="100px" />
+  </p>
+
+</section>
+  <section id="projet-pokemon" style="font-family: Arial, sans-serif; padding: 20px;">
+  <h2>Jeu en Java – Style Pokémon</h2>
+
+  <p>
+    Dans le cadre d’un projet personnel, j’ai développé un <strong>jeu en Java inspiré de l’univers Pokémon</strong>. Ce jeu intègre des mécaniques de combat dans un environnement 2D simple mais fonctionnel.
+  </p>
+
+  <h3 style="color: #333;">Objectifs pédagogiques</h3>
+  <ul>
+    <li>Maîtriser les bases et les principes avancés de la <strong>programmation orientée objet (POO)</strong></li>
+    <li>Mettre en pratique les concepts d’<strong>encapsulation</strong>, d’<strong>héritage</strong> et de <strong>polymorphisme</strong></li>
+    <li>Structurer une application Java en suivant une approche <strong>modulaire</strong></li>
+    <li>Créer des <strong>constructeurs</strong> personnalisés pour instancier des objets complexes</li>
+  </ul>
+
+  <h3 style="color: #333;">Architecture du jeu</h3>
+  <ul>
+    <li><strong>Classe abstraite</strong> <code>Creature</code> : définissant les attributs et comportements de base</li>
+    <li><strong>Classes filles</strong> comme <code>Feupet</code>, <code>Aquapet</code>, <code>Herbopet</code> héritant de <code>Creature</code></li>
+    <li><strong>Système de combat</strong> basé sur des attaques, types, points de vie et une gestion de tours</li>
+  </ul>
+
+  <h3 style="color: #333;">Compétences techniques acquises</h3>
+  <ul>
+    <li>Application complète de la <strong>POO en Java</strong></li>
+    <li>Bonne compréhension de la <strong>modularité et du découpage logique</strong> du code</li>
+    <li>Création de structures évolutives avec des <strong>interfaces et classes abstraites</strong></li>
+    <li>Utilisation de collections comme <code>ArrayList</code> pour gérer les créatures du joueur</li>
+    <li>Notions de <strong>design patterns</strong> simples</li>
+  </ul>
+
+  <h3 style="color: #333;">Captures et démo</h3>
+  <p>
+    <img src="assets/pokemon.png" alt="pokemon" width="100px" />
+  </p>
+
+  <h3 style="color: #333;">Conclusion</h3>
+  <p>
+    Ce projet m’a permis de consolider mes bases en Java tout en développant un jeu complet et fonctionnel. Il m’a donné une vision claire de l’importance de la structure du code, de la réutilisabilité des classes et de la rigueur dans l’organisation d’un projet logiciel.
+  </p>
+</section>
+<section style="font-family: Arial, sans-serif; padding: 20px;">
+  <h2>Gestionnaire de magasin – Application PHP / MySQL</h2>
+
+  <h3>Description</h3>
+  <p>
+    Cette application web développée en <strong>PHP</strong> permet de gérer efficacement les activités d’un magasin, notamment les <strong>produits</strong>, les <strong>commandes</strong> et les <strong>utilisateurs</strong>.  
+    Toutes les opérations sont basées sur la méthode <strong>CRUD</strong> (Create, Read, Update, Delete) via une base de données MySQL.  
+    Elle propose également un système d'<strong>authentification sécurisée par token</strong>, généré automatiquement lors de la connexion.
+  </p>
+
+  <h3>Fonctionnalités principales</h3>
+  <ul>
+    <li><strong>Gestion des produits :</strong> ajout, modification, suppression et consultation de produits en stock</li>
+    <li><strong>Gestion des commandes :</strong> enregistrement des commandes client et suivi du statut</li>
+    <li><strong>Gestion des utilisateurs :</strong> création de comptes, suppression, mise à jour des informations</li>
+    <li><strong>Système CRUD :</strong> chaque entité (produit, commande, utilisateur) est manipulable via une interface et des requêtes SQL sécurisées</li>
+    <li><strong>Connexion avec token :</strong> à la connexion, l’utilisateur reçoit un <code>token</code> unique lui permettant d’accéder aux fonctionnalités sans devoir se reconnecter à chaque action</li>
+  </ul>
+
+  <h3>Technologies utilisées</h3>
+  <ul>
+    <li>Langage : <strong>PHP</strong> (backend)</li>
+    <li>Base de données : <strong>MySQL</strong></li>
+    <li>Sécurité : <strong>authentification par token</strong> (type JWT simplifié)</li>
+    <li>Requêtes SQL paramétrées pour éviter les injections</li>
+    <li>Structure MVC légère pour séparer les responsabilités</li>
+  </ul>
+
+  <h3>Objectif</h3>
+  <p>
+    Permettre une <strong>gestion centralisée et intuitive</strong> des activités commerciales d’un magasin, tout en assurant un haut niveau de sécurité et de maintenabilité grâce à une architecture claire et modulaire.
+  </p>
+  
+  <h3 style="color: #333;">Captures et démo</h3>
+  <p>
+    <img src="assets/php.png" alt="gestionnaire de magasin" width="100px" />
+  </p>
+
+</section>
+<section style="font-family: Arial, sans-serif; padding: 20px; border-radius: 10px;">
+  <h2>Glitch Hunters – Jeu développé lors d'une Game Jam</h2>
+
+  <p>
+    À l'occasion d'une <strong>game jam</strong>, j'ai conçu un petit jeu en utilisant le framework <strong>Phaser JS</strong>.  
+    Le jeu est un mélange d’action et d’arcade, inspiré du classique <em>Space Invaders</em>, avec une touche originale et fantastique.
+  </p>
+
+  <h3>Concept</h3>
+  <p>
+    Vous incarnez un <strong>chat magicien</strong> qui lance des sorts pour repousser des vagues de fantômes maléfiques.  
+    Le gameplay repose sur des tirs magiques, des esquives et des niveaux de difficulté croissants dans un univers pixelisé.
+  </p>
+
+  <h3>Technologies utilisées</h3>
+  <ul>
+    <li><strong>Phaser JS</strong> (moteur de jeu HTML5)</li>
+    <li>Sprites et animations personnalisées en pixel art</li>
+    <li>Sons et musiques intégrés pour une ambiance rétro</li>
+  </ul>
+
+  <h3>Lien vers le jeu</h3>
+  <p>
+    Tu peux tester le jeu ici :  
+    <a target="_blank" rel="noopener" href="https://dylserker.itch.io/glitch-hunters" style="color: #4FC3F7; text-decoration: underline;">
+      https://dylserker.itch.io/glitch-hunters
+    </a>
+  </p>
+
+  <h3>Objectif de la jam</h3>
+  <p>
+    Réaliser un jeu complet en un temps limité, en travaillant de manière agile sur les mécaniques de gameplay, les graphismes, et la boucle de jeu.
+  </p>
+  
+  <h3 style="color: #333;">Captures et démo</h3>
+  <p>
+    <img src="assets/nekomancy.png" alt="nekomancy" width="100px" />
+  </p>
+
+</section>
+<section style="font-family: Arial, sans-serif; padding: 20px;">
+  <h2>Algorithme de plus court chemin – C</h2>
+
+  <h3>Description</h3>
+  <p>
+    Ce projet consiste en un algorithme développé en <strong>C</strong> permettant de calculer le <strong>plus court chemin</strong> entre deux nœuds d’un graphe, en prenant en compte les liens (arêtes). 
+    Il met en œuvre des structures de données efficaces et une gestion fine de la mémoire.
+  </p>
+
+  <h3>Fonctionnalités</h3>
+  <ul>
+    <li>Représentation de graphes avec des structures de nœuds et de pointeurs</li>
+    <li>Calcul du plus court chemin entre un nœud de départ et un nœud d’arrivée</li>
+    <li>Prise en charge des cas limites : absence de chemin, cycles, graphes non connexes</li>
+    <li>Gestion manuelle des erreurs, exceptions et libération de la mémoire (malloc / free)</li>
+  </ul>
+
+  <h3>Compétences acquises</h3>
+  <ul>
+    <li>✔️ Maîtrise des <strong>pointeurs</strong> et de la <strong>mémoire dynamique</strong></li>
+    <li>✔️ Implémentation et manipulation de <strong>graphes</strong> (liste d’adjacence, matrices)</li>
+    <li>✔️ Utilisation d’algorithmes classiques</li>
+    <li>✔️ Débogage avancé en C</li>
+    <li>✔️ Robustesse du code grâce à une gestion rigoureuse des <strong>cas limites</strong> et des erreurs</li>
+  </ul>
+
+  <h3>Objectif</h3>
+  <p>
+    Développer une compréhension approfondie des <strong>structures de données bas niveau</strong> et des <strong>algorithmes de parcours de graphe</strong>, tout en renforçant la rigueur en programmation C.
+  </p>
+  
+  <h3 style="color: #333;">Captures et démo</h3>
+  <p>
+    <img src="assets/pathfinding.png" alt="pathfinding" width="100px" />
+  </p>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
 </body>
 </html>
